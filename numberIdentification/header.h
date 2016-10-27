@@ -1,4 +1,5 @@
-#pragma once
+#ifndef HEADER
+#define HEADER
 #include "opencv2/opencv.hpp"
 #include "iostream"
 #include "math.h"
@@ -11,3 +12,4 @@ using namespace cv;
 #define findNumberAreaWay 1		//findNumberAreaWay == 1 局部自适应阈值化
 #define NUM_HEIGHT 120
 #define NUM_WIDTH 60
+#endif // !HEADER

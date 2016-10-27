@@ -1,4 +1,6 @@
-#pragma once
+#ifndef FUNCTION
+#define FUNCTION
+
 #include "header.h"
 
 using namespace std;
@@ -43,3 +45,4 @@ vector<Rect> calcExternalRect(Mat const mask_contours);
 
 //计算中心位置并将图像大小标准化
 vector<Rect> calcCenterAndStd(vector<Rect> dstRect);
+#endif // !FUNCTION
