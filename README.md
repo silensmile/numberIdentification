@@ -1,13 +1,10 @@
 仪器光电综合实验OPENCV模糊数字识别
 ----
 <br />
-<br />
 *by*	陈霁阳、戴鹏程
 
 # 主要程序代码
 
-OPENCV实验项目numberIdentification程序代码
-----
 
 ### header.h
 
