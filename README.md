@@ -3,6 +3,8 @@
 <br />
 *by*	陈霁阳、戴鹏程
 
+**代码由Git设置core.autocrlf true上传，建议直接clone。若下载zip，请注意更改文档换行符**
+
 # 主要程序代码
 
 
@@ -378,7 +380,7 @@ vector<Rect> sortStringArea(vector<Rect> srcRect)
 }
 
 /*C++中的匿名函数方法*/
-/*	
+/*
 	//按标号排序
 	std::sort(dstRect.begin(), dstRect.end(),
 		[](Rect rec1, Rect rec2) {return rec1.x < rec2.x; }
@@ -442,7 +444,7 @@ vector<Rect> findNumberArea(Mat const src, int thresholdVal, Size kernelSize1, S
 	vector<Rect> dstRect = calcExternalRect(mask_contours);
 
 	//按标号排序
-	std::sort(dstRect.begin(), dstRect.end(), 
+	std::sort(dstRect.begin(), dstRect.end(),
 		[](Rect rec1, Rect rec2) {return rec1.x < rec2.x; }
 	);
 
@@ -639,10 +641,10 @@ char recognize(const Mat src, const vector<Mat> modules, const int thre)
 	{
 		rel.push_back(relativity(dst, x));
 	}
-	
+
 	double max = 0;
 	char res=0;
-	
+
 	for (int ii = 0;ii < rel.size();++ii)
 	{
 		if (rel[ii] > max) {
